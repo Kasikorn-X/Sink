@@ -1,16 +1,9 @@
 name = "sink"
 upload_source_maps = true
-pages_build_output_dir = "./dist"
+pages_build_output_dir = "dist/"
+kv_namespaces = [ { binding = "NP", id = "c0280be3a1b74ed29bcb67b9ac74f1ac" } ]
+ai = { binding = "AI" }
+analytics_engine_datasets = [ { binding = "ANALYTICS", dataset = "sink" } ]
 
 [dev]
 port = 3000
-
-[ai]
-binding = "AI"
-
-[[kv_namespaces]]
-binding = "NP"
-id = "c0280be3a1b74ed29bcb67b9ac74f1ac"
-
-[[analytics_engine_datasets]]
-binding = "NP_SINK_ANALYTIC"

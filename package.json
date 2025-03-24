@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "NODE_OPTIONS=--max-old-space-size=8192 nuxt build",
+    "build-cf": "npx nuxi build --preset=cloudflare_pages",
     "build:map": "node scripts/build-map.js",
     "build:colo": "node scripts/build-colo.js",
-    "preview": "wrangler pages dev dist",
     "deploy-np": "wrangler pages deploy dist --project-name np-sink",
     "postinstall": "npm run build:map && nuxt prepare",
     "lint": "eslint .",
