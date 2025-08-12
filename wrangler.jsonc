@@ -32,6 +32,40 @@
       "pattern": "dev.coralworld.xyz/s/*",
       "zone_name": "coralworld.xyz"
     }
-  ]
-  // "pages_build_output_dir": "dist/"
+  ],
+  // "pages_build_output_dir": "dist/",
+  "env": {
+    "nonprod": {
+      "name": "sink-nonprod",
+      "ai": {
+        "binding": "AI"
+      },
+      "analytics_engine_datasets": [
+        {
+          "binding": "ANALYTICS",
+          "dataset": "sink"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "KV",
+          "id": "c0280be3a1b74ed29bcb67b9ac74f1ac"
+        }
+      ],
+      "routes": [
+        {
+          "pattern": "dev.coralworld.xyz/s/*",
+          "zone_name": "coralworld.xyz"
+        },
+        {
+          "pattern": "qa.coralworld.xyz/s/*",
+          "zone_name": "coralworld.xyz"
+        },
+        {
+          "pattern": "sit.coralworld.xyz/s/*",
+          "zone_name": "coralworld.xyz"
+        }
+      ]
+    }
+  }
 }

@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   ],
 
   devtools: { enabled: true },
+  app: {
+    baseURL: '/s/',
+  },
 
   colorMode: {
     classSuffix: '',
@@ -64,6 +67,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    baseURL: '/s',
     experimental: {
       openAPI: true,
     },
