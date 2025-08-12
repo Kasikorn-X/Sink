@@ -29,7 +29,7 @@
   ],
   "routes": [
     {
-      "pattern": "coralworld.xyz/s/*",
+      "pattern": "dev.coralworld.xyz/s/*",
       "zone_name": "coralworld.xyz"
     }
   ]
