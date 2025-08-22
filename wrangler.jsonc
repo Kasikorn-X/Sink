@@ -64,6 +64,10 @@
         {
           "pattern": "sit.coralworld.xyz/s/*",
           "zone_name": "coralworld.xyz"
+        },
+        {
+          "pattern": "ilinks.coralworld.xyz",
+          "custom_domain": true
         }
       ]
     }
