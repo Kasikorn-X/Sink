@@ -70,6 +70,34 @@
           "custom_domain": true
         }
       ]
+    },
+    "prod": {
+      "name": "sink-prod",
+      "ai": {
+        "binding": "AI"
+      },
+      "analytics_engine_datasets": [
+        {
+          "binding": "ANALYTICS",
+          "dataset": "sink"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "KV",
+          "id": "f5e42098f8ed4461b43ac17fa3b32930"
+        }
+      ],
+      "routes": [
+        {
+          "pattern": "coralworld.co/s/*",
+          "zone_name": "coralworld.co"
+        },
+        {
+          "pattern": "ilinks.coralworld.co",
+          "custom_domain": true
+        }
+      ]
     }
   }
 }
